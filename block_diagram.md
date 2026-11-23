@@ -32,7 +32,6 @@ flowchart TD
         N["14. LCD 3.5 inch Display"]
         O["15. Emergency Stop"]
         P["16. Power Supply 12V 15A"]
-        Q["17. Plywood Casing"]
     end
     
     CTRL ---|"Control"| L1
@@ -62,4 +61,3 @@ flowchart TD
 | 14 | Control | LCD 3.5" + Touch Screen | Display & interface |
 | 15 | Control | Emergency Stop Button | Shutdown |
 | 16 | Control | Power Supply 12V 15A | Main power |
-| 17 | Support | Plywood Casing 1/2" | Housing structure |

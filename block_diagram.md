@@ -2,21 +2,21 @@
 
 ```mermaid
 flowchart TD
-    subgraph L1["LAYER 1: MOUSE TRAP"]
+    subgraph L1["Layer 1: Mouse Trap"]
         direction LR
         A["1. Camera+YOLO Detect"] --> B["2. Servo Door Open"]
         B --> C["3. Load Cell Weight"]
         C --> D["4. Stepper Drop"]
     end
     
-    subgraph L2["LAYER 2: ELECTRIC SHOCK"]
+    subgraph L2["Layer 2: Electric Shock"]
         direction LR
         E["5. Motion Sensor x2"] --> F["6. Metal Cage"]
         F --> G["7. SSR Electrocut."]
         G --> H["8. Stepper Drop"]
     end
     
-    subgraph L3["LAYER 3: AQUAMATION CHAMBER"]
+    subgraph L3["Layer 3: Aquamation Chamber"]
         direction LR
         I["9. Brass Ball Valve"] --> J["10. SSR Heater"]
         J --> K["11. MAX6675 Temp"]
@@ -27,7 +27,7 @@ flowchart TD
     D -- "DROP" --> E
     H -- "TRANSFER" --> I
     
-    subgraph CTRL["CONTROL SYSTEM"]
+    subgraph CTRL["Control System"]
         direction LR
         N["14. LCD 3.5 inch Display"]
         O["15. Emergency Stop"]

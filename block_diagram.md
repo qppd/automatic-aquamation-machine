@@ -20,8 +20,7 @@ flowchart TD
         direction LR
         I["9. Brass Ball Valve"] --> J["10. SSR Heater"]
         J --> K["11. MAX6675 Temp"]
-        K --> L["12. Linear Actuator 1000N"]
-        L --> M["13. Rubber Gasket Seal"]
+        K --> L["12. Linear Actuator 1000N Seal"]
     end
     
     D -- "DROP" --> E
@@ -29,9 +28,9 @@ flowchart TD
     
     subgraph CTRL["Control System"]
         direction LR
-        N["14. LCD 3.5 inch Display"]
-        O["15. Emergency Stop"]
-        P["16. Power Supply 12V 15A"]
+        N["13. LCD 3.5 inch Display"]
+        O["14. Emergency Stop"]
+        P["15. Power Supply 12V 15A"]
     end
     
     CTRL ---|"Control"| L1
@@ -57,7 +56,6 @@ flowchart TD
 | 10 | L3 | SSR + Heating Element | Heat processing liquid |
 | 11 | L3 | MAX6675 Thermocouple | Temperature monitoring |
 | 12 | L3 | BTS7960 + Linear Actuator 1000N | Push door for seal |
-| 13 | L3 | Rubber Gasket | Airtight door seal |
-| 14 | Control | LCD 3.5" + Touch Screen | Display & interface |
-| 15 | Control | Emergency Stop Button | Shutdown |
-| 16 | Control | Power Supply 12V 15A | Main power |
+| 13 | Control | LCD 3.5" + Touch Screen | Display & interface |
+| 14 | Control | Emergency Stop Button | Shutdown |
+| 15 | Control | Power Supply 12V 15A | Main power |
